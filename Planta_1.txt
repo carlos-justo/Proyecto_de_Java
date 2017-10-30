@@ -1,0 +1,2 @@
+1234ABC;Ford Focus;Azul;Carlos;09.01.2017;19:00;
+5678DEF;Citröen C5;Azul Claro;Marta;07.10.2017;21:00;
