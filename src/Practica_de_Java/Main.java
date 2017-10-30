@@ -22,7 +22,6 @@ public class Main {
 	 */
 	
 	public static void main(String[] args) {
-		//try{
 			InputStreamReader I=new InputStreamReader(System.in);
 			BufferedReader R=new BufferedReader(I);
 		
@@ -132,7 +131,6 @@ public class Main {
 				default: break;
 				}
 			}while(num==0);	// salimos del bucle
-		//}catch(java.lang.Exception e){e.printStackTrace();}
 	}
 
 }

@@ -180,38 +180,31 @@ public class Parking {
 			String matricula=new String(), modelo=new String(), color=new String(), titular=new String(), fecha=new String(), hora=new String();
 			int pos1=0, pos2=0;
 			Vehiculos v;
-			//System.out.println("Vehiculos de la planta 1: ");
 			while((aux = entrada.readLine())!=null){
 				for(int i=0; i<6; i++) {
 					if (i==0) {
 						pos1=aux.indexOf(";");
 						matricula=aux.substring(0, pos1);
-						//System.out.print(matricula + "-");
 					}
 					else if(i==1) {
 						pos2=aux.indexOf(";", pos1 + 1);
 						modelo=aux.substring(pos1 + 1, pos2);
-						//System.out.print(modelo + "-");
 					}
 					else if(i==2) {
 						pos1=aux.indexOf(";", pos2 + 1);
 						color=aux.substring(pos2 + 1, pos1);
-						//System.out.print(color + "-");
 					}
 					else if(i==3) {
 						pos2=aux.indexOf(";", pos1 + 1);
 						titular=aux.substring(pos1 + 1, pos2);
-						//System.out.print(titular + "-");
 					}
 					else if(i==4) {
 						pos1=aux.indexOf(";", pos2 + 1);
 						fecha=aux.substring(pos2 + 1, pos1);
-						//System.out.print(fecha + "-");
 					}
 					else if(i==5) {
 						pos2=aux.indexOf(";", pos1 + 1);
 						hora=aux.substring(pos1 + 1, pos2);
-						//System.out.println(hora);
 					}
 				}
 				v = new Vehiculos(matricula, modelo, color, titular, hora, fecha);
@@ -231,38 +224,31 @@ public class Parking {
 			String matricula=new String(), modelo=new String(), color=new String(), titular=new String(), fecha=new String(), hora=new String();
 			int pos1=0, pos2=0;
 			Vehiculos v;
-			//System.out.println("Vehiculos de la planta 2: ");
 			while((aux = entrada2.readLine())!=null){
 				for(int i=0; i<6; i++) {
 					if (i==0) {
 						pos1=aux.indexOf(";");
 						matricula=aux.substring(0, pos1);
-						//System.out.print(matricula + "-");
 					}
 					else if(i==1) {
 						pos2=aux.indexOf(";", pos1 + 1);
 						modelo=aux.substring(pos1 + 1, pos2);
-						//System.out.print(modelo + "-");
 					}
 					else if(i==2) {
 						pos1=aux.indexOf(";", pos2 + 1);
 						color=aux.substring(pos2 + 1, pos1);
-						//System.out.print(color + "-");
 					}
 					else if(i==3) {
 						pos2=aux.indexOf(";", pos1 + 1);
 						titular=aux.substring(pos1 + 1, pos2);
-						//System.out.print(titular + "-");
 					}
 					else if(i==4) {
 						pos1=aux.indexOf(";", pos2 + 1);
 						fecha=aux.substring(pos2 + 1, pos1);
-						//System.out.print(fecha + "-");
 					}
 					else if(i==5) {
 						pos2=aux.indexOf(";", pos1 + 1);
 						hora=aux.substring(pos1 + 1, pos2);
-						//System.out.println(hora);
 					}
 				}
 				v = new Vehiculos(matricula, modelo, color, titular, hora, fecha);
@@ -284,11 +270,9 @@ public class Parking {
 					
 				if(i==0) {
 					coste = Float.parseFloat(aux);
-					//System.out.println(coste);
 					}
 				else if(i==1) {
 					ganancias = Double.parseDouble(aux);
-					//System.out.println(ganancias);
 					}
 				i++;			
 			}			
